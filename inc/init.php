@@ -16,14 +16,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Set includes
 $files = array(
-	'class-service.php'		 => [],
-	'class-rest.php'		 => ['CW_LF_OSA\REST'],
-    // 'class-cpt-tax.php' 	 => array( 'CW_SEO_Survey\CW_SEO_Survey_CPT_Tax' ),
-	'class-admin.php'		 => [ 'CW_LF_OSA\Admin' ],
-    'class-frontend.php'		 => [ 'CW_LF_OSA\Frontend' ],
-	// 'class-config.php'		 => array( 'CW_SEO_Survey\CW_SEO_Survey_Config' ),
-	// 'shortcodes.php'		 => array(),
-	// 'updates.php'			 => array()
+	'class-service.php'	 => [],
+	'class-rest.php'	 => [ 'CW_LF_OSA\REST' ],
+	'class-admin.php'	 => [ 'CW_LF_OSA\Admin' ],
+    'class-frontend.php' => [ 'CW_LF_OSA\Frontend' ],
+	'updates.php'		 => [ 'CW_LF_OSA\Updates' ]
 );
 
 //Include files
