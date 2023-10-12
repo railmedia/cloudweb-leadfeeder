@@ -90,6 +90,7 @@ class REST {
         }
 
         return new \WP_REST_Response([
+            'image'    => $image,
             'response' => rtrim( site_url(), '/' ) . '/wp-content/uploads/onesimpleapi/' . $img_name . '.jpg',
             'imgName'  => $img_name . '.jpg'
         ], 200);

@@ -41,7 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         return res.json();
                     }).then( async body => {
 
-                        elementI[0].src = body.response;
+                        if( body.image ) {
+                            elementI[0].src = body.response;
+                        }
 
                         await fetch('wp-json/cwlfosa/v1/ddfi', {
                             method: 'POST',
